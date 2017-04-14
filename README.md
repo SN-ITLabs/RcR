@@ -33,7 +33,7 @@ An application for code linting and reviewing with fully customizable rules for 
 
 *Every reviewer* can do the code reviewing on multiple updateSets and the developer will have the visibility of the review validation results simultaneously to act upon in brining the highest quality of code quickly.
 
-## Developer Persona:
+## Developer Persona: (Required Role: *x_snc_rcr.Developer*)
 
 1. Developers can click on *"Code Review"* button on the script entities (Business Rules, Script Includes, Client Scripts and UI Scripts) and find the validation results directly on the script entity to act on accordingly.
 
@@ -43,13 +43,13 @@ An application for code linting and reviewing with fully customizable rules for 
 
  ![UpdateSet Code Review](Readme-assets/UpdateSet-CodeReview.png)
  
-## Reviewer Persona:
+## Reviewer Persona: (Required Role: *x_snc_rcr.Reviewer*)
 
 Reviewer can review the code spanning across multipe updateSets using the Review Request module by creating a review request with the appropriate details like Story number, Story Owner and the list of update sets to be considered as an unit of work to be reviewed. Once the request is created, Reviewer can request for *"Code Review"* using the button on the request form and the validation results will be populated under *"Review Results"* which can then be worked on by the respective developer. Reviewer can click on the *"Code Review"* button on the Review Request form any number of times to re-validate the status of the code changes.
 
  ![Review Request - Code Review](Readme-assets/ReviewRequest-CodeReview.png)
  
-## Rules Administrator Persona:
+## Rules Administrator Persona: (Role Required: *x_snc_rcr.RuleAdministrator*)
 
 Rule Administrator can maintain the Review Rules with the below capabilities:
 
