@@ -4,7 +4,7 @@ An application for code linting and reviewing with fully customizable rules for 
 
 ## Install Notes:
 
-* Download the update sets from https://github.com/SNDevTools/InSee/tree/master/Dist and install on your instance.
+* Download the update sets from https://github.com/SN-ITLabs/RcR/tree/master/Dist and install on your instance.
 * Pre-requisites: 
      1. Need to have a MID Server configured to your instance. 
      2. PHP (https://www.mamp.info) 
