@@ -1,4 +1,4 @@
-# ![InSee logo](Readme-assets/InSee-Logo.png)UncleBob
+# ![RcR logo](Readme-assets/RcR-Logo.png)Rapid Code Review (RcR)
 
 An application for code linting and reviewing with fully customizable rules for every ServiceNow developer/reviewer.
 
