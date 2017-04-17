@@ -15,8 +15,8 @@ An application for code linting and reviewing with fully customizable rules for 
           2. *Linux*
                1. run the command *>npm install -g eslint*
 * Setup the application on MID Server by following the below steps:
-     1. System Administrator needs to change the scope to "Automated Code Review". 
-     2. Go to Navigator -> Automated Code Review -> Setup
+     1. System Administrator needs to change the scope to "Rapid Code Review". 
+     2. Go to Navigator -> Rapid Code Review -> Setup
      3. Provide the name of the MID Server used for code reviewing along with the integration user credentials. 
      Note: Integration user needs to have admin role.
      4. Change the "Code Sync Status" from "Not Initialized" to "Intialized" and
