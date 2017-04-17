@@ -73,7 +73,7 @@ the following steps will illustrate how to create a new Rule
 1. Navigate to Rapid code Review -> Code Review Rules List and click on New
 2. fill in the mandatory fields as applicable and hit save. Only then Defnition fields shows up.
 
-![Rule Definition](Readme-assets/NewRule.png)
+![Rule Definition](Readme-assets/NewRule1.png)
 
 3. upon updating rule, always use Update rule UI Action. and Sync Rules UI Action for Explicit Sync of rules to MID server.
 4. writing a rule using rule builder.
