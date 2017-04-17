@@ -68,8 +68,24 @@ Rule Administrator can maintain the Review Rules with the below capabilities:
 Developers can use the links provided in the *Resources* Section to start learning on how to write the custom rules.
 This application provides the Rule Builder interface which can be used to implement new rules on the go along with testing the rule with the sample code snippet on the same interface. 
 
-![Rule Builder](Readme-assets/RuleBuilder.png)
-     
+the following steps will illustrate how to create a new Rule
+
+1. Navigate to Rapid code Review -> Code Review Rules List and click on New
+2. fill in the mandatory fields as applicable and hit save. Only then Defnition fields shows up.
+
+![Rule Definition](Readme-assets/NewRule.png)
+
+3. upon updating rule, always use Update rule UI Action. and Sync Rules UI Action for Explicit Sync of rules to MID server.
+4. writing a rule using rule builder.
+
+![Rule Definition](Readme-assets/RuleBuilder.png)
+
+5. after creating a rule, one can add conditions under the Code Review Rule Conditions related list. Hit New to see a screen like below.
+fill in appropriate values based on conditional linting requirements.
+
+![Rule Definition](Readme-assets/ConditionRule.png)
+
+
 ## Resources
 
 To develop new eslint rules using the AST (Abstract Syntax Tree):
