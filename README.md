@@ -13,7 +13,8 @@ An application for code linting and reviewing with fully customizable rules for 
                1. run the command  *>npm install eslint --save-dev* from agent folder.
                2. add *"<Agent folder>/node_modules/.bin"* to the environment variable *"PATH"*
           2. *Linux*
-               1. run the command *>npm install -g eslint*
+               1. run the command with sudo access: *>sudo npm install -g eslint*
+               
 * Setup the application on MID Server by following the below steps:
      1. System Administrator needs to change the scope to "Rapid Code Review". 
      2. Go to Navigator -> Rapid Code Review -> Setup
