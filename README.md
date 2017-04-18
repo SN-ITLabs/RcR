@@ -18,7 +18,7 @@ An application for code linting and reviewing with fully customizable rules for 
      1. System Administrator needs to change the scope to "Rapid Code Review". 
      2. Go to Navigator -> Rapid Code Review -> Setup
      3. Provide the name of the MID Server used for code reviewing along with the integration user credentials. 
-     Note: Integration user needs to have admin role.
+     Note: Integration user needs to have x_snc_rcr.CodeSyncAdmin role.
      4. Change the "Code Sync Status" from "Not Initialized" to "Intialized" and
      5. Click on Save. Wait for couple of minutes and refresh the page to see if the status changed to "Completed".
      
