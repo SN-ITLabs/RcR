@@ -9,7 +9,7 @@ An application for code linting and reviewing with fully customizable rules for 
      1. Need to have a MID Server configured to your instance. 
      2. PHP (https://www.mamp.info) 
      3. Installing ESLint (http://eslint.org) commands and installed globally and running on the machine where the MID Server is configured.
-          1. *Windows*
+          1. *Windows* - (via Command prompt as an Administrator)
                1. run the command  *>npm install eslint --save-dev* from agent folder.
                2. add *"<Agent folder>/node_modules/.bin"* to the environment variable *"PATH"*
           2. *Linux*
@@ -92,6 +92,21 @@ fill in appropriate values based on conditional linting requirements.
 To develop new eslint rules using the AST (Abstract Syntax Tree):
 ### http://eslint.org/docs/developer-guide/working-with-rules
 ### https://astexplorer.net
+
+### Troubleshooting
+1. An ES lint rule can be defined included in to rule engine in different formats viz.,
+     1. export default function
+     2. module.export (explicit scope creation in definition)
+     3. module.export = function (context) (using implicit context passed by eslint)
+     
+     for the current(1.0) release we encourage rule developers to stick to the 3rd way of defining the rules.
+2. Check for Null : Ensure every property/Object that is involved in decision making is not null. This is a trivial null check in javascript yet plays a key role in rule defining. Unsafe access of properties can result in rule malfucntion and a lot of linting errors will be logged in review results.
+
+     example : 
+     reference.identifier.name === gr && reference.identifier.parent.init  --> is an unsafe expression
+     where as,
+     reference.identifier && reference.identifier.name === gr && reference.identifier.parent && reference.identifier.parent.init --> is a safe expression
+     
 
 ## License:
 
