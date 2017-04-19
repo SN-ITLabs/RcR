@@ -43,12 +43,18 @@ An application for code linting and reviewing with fully customizable rules for 
 2. Developers can also click on *"Code Review"* button on the appropriate updateSet to validate the rules against all the script entities in that updateSet so as to find and fix the validation errors related to that updateSet.
 
  ![UpdateSet Code Review](Readme-assets/UpdateSet-CodeReview.png)
- 
+  
+ 3. Developers needs to create an entry in *ESLintGlobals* table like the following to inform ESLint about the predefined variables.
+
+![Review Request - Code Review](Readme-assets/ESlintGlobals.png)
+
+
 ## Reviewer Persona: (Role required: *x_snc_rcr.Reviewer*)
 
 Reviewer can review the code spanning across multipe updateSets using the Review Request module by creating a review request with the appropriate details like Story number, Story Owner and the list of update sets to be considered as an unit of work to be reviewed. Once the request is created, Reviewer can request for *"Code Review"* using the button on the request form and the validation results will be populated under *"Review Results"* which can then be worked on by the respective developer. Reviewer can click on the *"Code Review"* button on the Review Request form any number of times to re-validate the status of the code changes.
 
  ![Review Request - Code Review](Readme-assets/Review-Request.png)
+ 
  
 ## Rules Administrator Persona: (Role required: *x_snc_rcr.RuleAdministrator*)
 
