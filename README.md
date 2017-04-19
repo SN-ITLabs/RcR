@@ -111,6 +111,13 @@ To develop new eslint rules using the AST (Abstract Syntax Tree):
  reference.identifier && reference.identifier.name === gr && reference.identifier.parent && reference.identifier.parent.init --> is a safe expression
      
 
+## Wish list for Rcr 2.0
+
+                1. Capability to scan scoped applications along with update sets and individual artefacts.
+                2. Change the MID server side rule validation logic from PHP to Java/Javascript code for platform consistency.
+                3. Addition of more OOTB rules.
+                4. Configuration of OOTB Eslint rules
+
 ## License:
 
 MIT
