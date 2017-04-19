@@ -102,10 +102,13 @@ To develop new eslint rules using the AST (Abstract Syntax Tree):
      for the current(1.0) release we encourage rule developers to stick to the 3rd way of defining the rules.
 2. Check for Null : Ensure every property/Object that is involved in decision making is not null. This is a trivial null check in javascript yet plays a key role in rule defining. Unsafe access of properties can result in rule malfucntion and a lot of linting errors will be logged in review results.
 
-     example : 
-     reference.identifier.name === gr && reference.identifier.parent.init  --> is an unsafe expression
-     where as,
-     reference.identifier && reference.identifier.name === gr && reference.identifier.parent && reference.identifier.parent.init --> is a safe expression
+ example : 
+ 
+ reference.identifier.name === gr && reference.identifier.parent.init  --> is an unsafe expression
+   
+  where as,
+   
+ reference.identifier && reference.identifier.name === gr && reference.identifier.parent && reference.identifier.parent.init --> is a safe expression
      
 
 ## License:
