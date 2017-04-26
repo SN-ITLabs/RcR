@@ -92,14 +92,11 @@ fill in appropriate values based on conditional linting requirements.
 
 ![Rule Definition](Readme-assets/ConditionRule.png)
 
+## Misc
 
-## Resources
+As the rule validation results on the update sets and code review requests pile up with time, the application has a scheduled job to clean up the old validation results which are not active (results from previous runs) with the default value of 1 day set. If you want to increase that timelimit to persist the inactive records for longer duration, then you have to confirue the property *x_snc_rcr.RCRResultsCleanUp*.
 
-To develop new eslint rules using the AST (Abstract Syntax Tree):
-### http://eslint.org/docs/developer-guide/working-with-rules
-### https://astexplorer.net
-
-### Troubleshooting
+## Troubleshooting
 1. An ES lint rule can be defined included in to rule engine in different formats viz.,
      1. export default function
      2. module.export (explicit scope creation in definition)
@@ -117,12 +114,22 @@ To develop new eslint rules using the AST (Abstract Syntax Tree):
  reference.identifier && reference.identifier.name === gr && reference.identifier.parent && reference.identifier.parent.init --> is a safe expression
      
 
+## Resources
+
+To develop new eslint rules using the AST (Abstract Syntax Tree):
+### http://eslint.org/docs/developer-guide/working-with-rules
+### https://astexplorer.net
+
+
+
 ## Wish list for Rcr 2.0
 
-                1. Capability to scan scoped applications along with update sets and individual artefacts.
-                2. Change the MID server side rule validation logic from PHP to Java/Javascript code for platform consistency.
-                3. Addition of more OOTB rules.
-                4. Configuration of OOTB Eslint rules
+           1. Capability to scan scoped applications along with update sets and individual artefacts.
+           2. Change the MID server side rule validation logic from PHP to Java/Javascript code for platform consistency.
+           3. Addition of more OOTB rules.
+           4. Configuration of OOTB Eslint rules
+           
+     If anyone is interested to contribute into the rule development and the next version features, please contact us.
 
 ## License:
 
