@@ -134,3 +134,10 @@ To develop new eslint rules using the AST (Abstract Syntax Tree):
 ## License:
 
 MIT
+
+## Credits
+
+Shyam Jegadeesh Jeyakumar
+Hareesh Neelisetti 
+Chaitanya Saragadam
+and Surf team :)
