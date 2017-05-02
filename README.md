@@ -8,10 +8,11 @@ An application for code linting and reviewing with fully customizable rules for 
 * Pre-requisites: 
      1. Need to have a MID Server configured to your instance. 
      2. PHP (https://www.mamp.info) 
+     3. Install node (https://nodejs.org/en/download/)
      3. Installing ESLint (http://eslint.org) commands and installed globally and running on the machine where the MID Server is configured.
           1. *Windows* - (via Command prompt as an Administrator)
-               1. run the command  *>npm install eslint --save-dev* from agent folder.
-               2. add *"<Agent folder>/node_modules/.bin"* to the environment variable *"PATH"*
+               1. run the command  *>npm install eslint --save-dev* from MID Server's agent folder.
+               2. add *"MIDSERVER_Agent_folder/node_modules/.bin"* to the environment variable *"PATH"*
           2. *Linux*
                1. run the command with sudo access: *>sudo npm install -g eslint*
                
