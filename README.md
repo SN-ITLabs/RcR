@@ -129,6 +129,7 @@ To develop new eslint rules using the AST (Abstract Syntax Tree):
            2. Change the MID server side rule validation logic from PHP to Java/Javascript code for platform consistency.
            3. Addition of more OOTB rules.
            4. Configuration of OOTB Eslint rules
+           5. Add approval flow into the application so that until the reviewer signs off the reviewing artifact, the team dashboard should not allow the code to be pushed to higher environments.
            
      If anyone is interested to contribute into the rule development and the next version features, please contact us.
 
