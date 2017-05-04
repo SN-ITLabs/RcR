@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-04-18 14:31:56">
+<unload unload_date="2017-05-04 17:19:21">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -18,15 +18,201 @@
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:55</sys_created_on>
-<sys_id>a396ea000f5e320063318d8ce1050ec7</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>7b562d110fe2320063318d8ce1050eff</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:55</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
 </sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_a6559b4ddbe9b20043abfd441d9619a1</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;hint/&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;name&gt;Code Review&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[// gs.addInfoMessage('Code review results will be populated in a moment. Please refresh "Review Validation Results" section.');
+// action.setRedirectURL(current);
+// var validUtil = new x_snc_rcr.ValidateCodeReviewPayload();
+// validUtil.validate(current);
+
+action.setRedirectURL(current);
+var validUtil = new x_snc_rcr.ValidateCodeReviewPayload();
+var midName = validUtil.getActiveMidAgentName();
+if(midName == -1){
+	gs.addErrorMessage('No Active MID server message');
+}else{
+	gs.addInfoMessage('Code review results will be populated in a moment. Please refresh "Review Validation Results" section.');
+	validUtil.validate(current);
+}
+]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-15 13:42:57&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a6559b4ddbe9b20043abfd441d9619a1&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Code Review&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_a6559b4ddbe9b20043abfd441d9619a1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;hareeshhere&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-12 09:04:59&lt;/sys_updated_on&gt;&lt;table&gt;sys_update_set&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>33566d110fe2320063318d8ce1050e02</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
+<table>sys_update_set</table>
+<target_name>Code Review</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_cf98f8e2db4a7600da37f9361d9619ac</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.SyncRuleUtil&lt;/api_name&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;SyncRuleUtil&lt;/name&gt;&lt;script&gt;&lt;![CDATA[	var SyncRuleUtil = Class.create();
+SyncRuleUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	sync: function(){
+		var eslintCommand = '&lt;parameters&gt;&lt;parameter name="name" value="php acr/rulessync.php"/&gt;&lt;/parameters&gt;';
+		var queue = new GlideRecord('ecc_queue');
+		
+		queue.initialize();
+		queue.topic = 'Command';
+		queue.queue = 'output';
+		
+		queue.agent = this.getActiveMidAgentName();
+		if(queue.agent == '-1'){
+			gs.addErrorMessage('No Active MID server message');
+			return  'No Active MID server message';
+		}
+		queue.payload= eslintCommand;
+		
+		queue.insert();
+		return queue.agent;
+		
+	},
+	getActiveMidAgentName: function(){
+		var agent = new GlideRecord('ecc_agent');
+		var midserverName ='mid.server.';
+		var configuredMid4CodeReview = midserverName + gs.getProperty('x_snc_rcr.ESLintMid');
+		agent.addQuery('status','Up');
+		gs.info('*** configuredMid4CodeReview = ' + configuredMid4CodeReview);
+		agent.addQuery('name',gs.getProperty('x_snc_rcr.ESLintMid'));
+		//agent.addQuery('agent',configuredMid4CodeReview);
+		agent.query();
+		gs.info('*** configuredMid4CodeReview = '+ agent.getRowCount());
+		if(agent.next()){
+			midserverName += agent.name;
+		}else{
+			midserverName = '-1';
+		}
+		return midserverName;
+	},
+	
+	type: 'SyncRuleUtil'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-13 14:40:38&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;cf98f8e2db4a7600da37f9361d9619ac&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;SyncRuleUtil&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_cf98f8e2db4a7600da37f9361d9619ac&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-17 09:17:52&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>37566d110fe2320063318d8ce1050e01</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
+<table/>
+<target_name>SyncRuleUtil</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_009653e4db15f24043abfd441d961928</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;cmdb_ci_acc&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;MyTestScript&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+//	gs.log('My Test Script');
+	var gr = new GlideRecord('incident');
+	gr.query();
+	return gr.getRowCount();
+	
+//	var gr1='009653e4db15f24043abfd441d961928';
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-01 14:16:15&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;009653e4db15f24043abfd441d961928&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;MyTestScript&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_009653e4db15f24043abfd441d961928&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-07 08:28:47&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=009653e4db15f24043abfd441d961928"/&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>3b566d110fe2320063318d8ce1050e00</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
+<table>cmdb_ci_acc</table>
+<target_name>MyTestScript</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_relationship_577911aedb913200c2f3717bbf961969</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_relationship"&gt;&lt;sys_relationship action="INSERT_OR_UPDATE"&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;apply_to/&gt;&lt;basic_apply_to&gt;sys_update_set&lt;/basic_apply_to&gt;&lt;basic_query_from&gt;sys_update_xml&lt;/basic_query_from&gt;&lt;insert_callback/&gt;&lt;name&gt;Reviewable Objects&lt;/name&gt;&lt;query_from/&gt;&lt;query_with&gt;&lt;![CDATA[(function refineQuery(current, parent) {
+
+	// Add your code here, such as current.addQuery(field, value);
+current.addQuery('update_set',parent.sys_id);
+// 	current.addQuery('type','Business Rule');
+// 	current.addQuery('type','Client Script');
+// 		current.addQuery('type','Script Include');
+	
+var queryString = "type=Business Rule^ORtype=Client Script^ORtype=Script Include";
+//  var gr = new GlideRecord('incident');
+
+ current.addEncodedQuery(queryString);
+	
+})(current, parent);]]&gt;&lt;/query_with&gt;&lt;reference_field&gt;application&lt;/reference_field&gt;&lt;related_list/&gt;&lt;simple_reference&gt;false&lt;/simple_reference&gt;&lt;sys_class_name&gt;sys_relationship&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-07 10:23:26&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;577911aedb913200c2f3717bbf961969&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Reviewable Objects&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_relationship_577911aedb913200c2f3717bbf961969&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-07 10:33:09&lt;/sys_updated_on&gt;&lt;/sys_relationship&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=577911aedb913200c2f3717bbf961969"/&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>3f562d110fe2320063318d8ce1050eff</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
+<table/>
+<target_name>Reviewable Objects</target_name>
+<type>Relationship</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_related_sys_script_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="sys_script" version="2" view=""><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Business Rule - Default view" name="sys_script" related_list="NULL" sys_domain="global" view="Default view">1c7c19c31f101000dada97c0ed8b708c</list_id><order_by/><position>0</position><related_list>REL:67bdac52374010008687ddb1967334ee</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-09 16:56:07</sys_created_on><sys_id>390805dbdb957200c2f3717bbf96192c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-09 16:56:07</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Business Rule - Default view" name="sys_script" related_list="NULL" sys_domain="global" view="Default view">1c7c19c31f101000dada97c0ed8b708c</list_id><order_by/><position>1</position><related_list>REL:ee77cd9bdb957200c2f3717bbf9619ec</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-09 16:56:07</sys_created_on><sys_id>3d0805dbdb957200c2f3717bbf96192c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-09 16:56:07</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Business Rule - Default view</calculated_name><filter/><name>sys_script</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-09 16:56:07</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1c7c19c31f101000dada97c0ed8b708c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Business Rule - Default view</sys_name><sys_package display_value="Version Support" source="com.glideapp.version">78282f00db33220043abfd441d96197b</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_related_sys_script_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-09 16:56:07</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>3f566d110fe2320063318d8ce1050e02</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
+<table>sys_script</table>
+<target_name>Business Rule</target_name>
+<type>Related Lists</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
 <sys_update_xml action="INSERT_OR_UPDATE">
 <action>INSERT_OR_UPDATE</action>
 <application display_value="Global">global</application>
@@ -58,14 +244,14 @@ SyncACRFiles.prototype = {
 	
 	type: 'SyncACRFiles'
 };]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-27 10:59:57&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;7b13e005dbbdb60043abfd441d961902&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;SyncACRFiles&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy&gt;none&lt;/sys_policy&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_7b13e005dbbdb60043abfd441d961902&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-06 14:21:38&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>2396ea000f5e320063318d8ce1050ec9</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>73566d110fe2320063318d8ce1050e01</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <table/>
 <target_name>SyncACRFiles</target_name>
 <type>Script Include</type>
@@ -85,14 +271,14 @@ SyncACRFiles.prototype = {
 current.addQuery('file_sys_id',parent.sys_id);
 		current.addQuery('isnew', true);
 })(current, parent);]]&gt;&lt;/query_with&gt;&lt;reference_field&gt;file_sys_id&lt;/reference_field&gt;&lt;related_list/&gt;&lt;simple_reference&gt;false&lt;/simple_reference&gt;&lt;sys_class_name&gt;sys_relationship&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 16:54:37&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;ee77cd9bdb957200c2f3717bbf9619ec&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Review Validation Results&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_relationship_ee77cd9bdb957200c2f3717bbf9619ec&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-14 11:04:23&lt;/sys_updated_on&gt;&lt;/sys_relationship&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=ee77cd9bdb957200c2f3717bbf9619ec"/&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>2796ea000f5e320063318d8ce1050ec8</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>77566d110fe2320063318d8ce1050e00</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <table/>
 <target_name>Review Validation Results</target_name>
 <type>Relationship</type>
@@ -107,14 +293,14 @@ current.addQuery('file_sys_id',parent.sys_id);
 <comments/>
 <name>sys_user_role_638031480fda320063318d8ce1050e0c</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="DELETE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>RCRCodeSync</name><suffix/><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-18 10:36:19</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>638031480fda320063318d8ce1050e0c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>RCRCodeSync</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_user_role_638031480fda320063318d8ce1050e0c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-18 10:36:19</sys_updated_on></sys_user_role></record_update>]]></payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>2796ea000f5e320063318d8ce1050ecb</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>77566d110fe2320063318d8ce1050e03</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <table/>
 <target_name>RCRCodeSync</target_name>
 <type>Role</type>
@@ -129,14 +315,14 @@ current.addQuery('file_sys_id',parent.sys_id);
 <comments/>
 <name>sys_ui_related_sys_script_include_null</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="sys_script_include" version="2" view=""><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Script Include - Default view" name="sys_script_include" related_list="NULL" sys_domain="global" view="Default view">f33f49831f101000dada97c0ed8b70f8</list_id><order_by/><position>0</position><related_list>REL:67bdac52374010008687ddb1967334ee</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-09 16:55:14</sys_created_on><sys_id>81d741dbdb957200c2f3717bbf96195e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-09 16:55:14</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Script Include - Default view" name="sys_script_include" related_list="NULL" sys_domain="global" view="Default view">f33f49831f101000dada97c0ed8b70f8</list_id><order_by/><position>1</position><related_list>REL:ee77cd9bdb957200c2f3717bbf9619ec</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-09 16:55:14</sys_created_on><sys_id>89d741dbdb957200c2f3717bbf96195e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-09 16:55:14</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Script Include - Default view</calculated_name><filter/><name>sys_script_include</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-09 16:55:14</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f33f49831f101000dada97c0ed8b70f8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Script Include - Default view</sys_name><sys_package display_value="Version Support" source="com.glideapp.version">78282f00db33220043abfd441d96197b</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_related_sys_script_include_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-09 16:55:14</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>2b96ea000f5e320063318d8ce1050eca</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>7b566d110fe2320063318d8ce1050e02</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <table>sys_script_include</table>
 <target_name>Script Include</target_name>
 <type>Related Lists</type>
@@ -203,14 +389,14 @@ function getActiveMidAgentName(){&#13;
 // &lt;sys_updated_by&gt;mid.user&lt;/sys_updated_by&gt;&#13;
 // &lt;sys_updated_on&gt;2017-02-23 06:34:15&lt;/sys_updated_on&gt;&#13;
 // &lt;topic&gt;Command&lt;/topic&gt;</script><show_insert>true</show_insert><show_multiple_update>false</show_multiple_update><show_query>false</show_query><show_update>true</show_update><sys_class_name>sys_ui_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-02-22 06:32:14</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6649addadb457a40fc3b7ffdbf9619bb</sys_id><sys_mod_count>8</sys_mod_count><sys_name>Validate</sys_name><sys_overrides/><sys_package display_value="Patents Management Tool" source="x_16767_patents">68dea2c613cb9284daf93227d144b09d</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_action_6649addadb457a40fc3b7ffdbf9619bb</sys_update_name><sys_updated_by>hareeshhere</sys_updated_by><sys_updated_on>2017-03-13 16:11:12</sys_updated_on><table>sys_script</table><ui11_compatible>true</ui11_compatible><ui16_compatible>false</ui16_compatible></sys_ui_action></record_update>]]></payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>2f96ea000f5e320063318d8ce1050ec9</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>7f566d110fe2320063318d8ce1050e01</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <table>sys_script</table>
 <target_name>Validate</target_name>
 <type>UI Action</type>
@@ -230,14 +416,14 @@ function getActiveMidAgentName(){&#13;
 current.addQuery('file_sys_id',parent.sys_id);
 		current.addQuery('isnew', true);
 })(current, parent);]]&gt;&lt;/query_with&gt;&lt;reference_field&gt;file_sys_id&lt;/reference_field&gt;&lt;related_list/&gt;&lt;simple_reference&gt;false&lt;/simple_reference&gt;&lt;sys_class_name&gt;sys_relationship&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 16:54:37&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;ee77cd9bdb957200c2f3717bbf9619ec&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;reviews&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_relationship_ee77cd9bdb957200c2f3717bbf9619ec&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-14 11:01:53&lt;/sys_updated_on&gt;&lt;/sys_relationship&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=ee77cd9bdb957200c2f3717bbf9619ec"/&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>6396ea000f5e320063318d8ce1050ec8</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>b3566d110fe2320063318d8ce1050e00</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <table/>
 <target_name>reviews</target_name>
 <type>Relationship</type>
@@ -252,14 +438,14 @@ current.addQuery('file_sys_id',parent.sys_id);
 <comments/>
 <name>sys_user_role_2dee61080fda320063318d8ce1050e6d</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>ScriptAction_Admin</name><suffix/><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-18 10:33:48</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>2dee61080fda320063318d8ce1050e6d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ScriptAction_Admin</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_user_role_2dee61080fda320063318d8ce1050e6d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-18 10:33:48</sys_updated_on></sys_user_role></record_update>]]></payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>6396ea000f5e320063318d8ce1050ecb</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>b3566d110fe2320063318d8ce1050e03</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <table/>
 <target_name>ScriptAction_Admin</target_name>
 <type>Role</type>
@@ -274,14 +460,14 @@ current.addQuery('file_sys_id',parent.sys_id);
 <comments/>
 <name>sys_ui_related_sys_script_client_null</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="sys_script_client" version="2" view=""><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Client Script - Default view" name="sys_script_client" related_list="NULL" sys_domain="global" view="Default view">9fc07e131f101000dada97c0ed8b7024</list_id><order_by/><position>0</position><related_list>REL:67bdac52374010008687ddb1967334ee</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-09 16:58:28</sys_created_on><sys_id>909849dbdb957200c2f3717bbf9619da</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-09 16:58:28</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Client Script - Default view" name="sys_script_client" related_list="NULL" sys_domain="global" view="Default view">9fc07e131f101000dada97c0ed8b7024</list_id><order_by/><position>1</position><related_list>REL:ee77cd9bdb957200c2f3717bbf9619ec</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-09 16:58:28</sys_created_on><sys_id>949849dbdb957200c2f3717bbf9619da</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-09 16:58:28</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Client Script - Default view</calculated_name><filter/><name>sys_script_client</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-09 16:58:28</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9fc07e131f101000dada97c0ed8b7024</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Client Script - Default view</sys_name><sys_package display_value="Version Support" source="com.glideapp.version">78282f00db33220043abfd441d96197b</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_related_sys_script_client_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-09 16:58:28</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>6796ea000f5e320063318d8ce1050eca</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>b7566d110fe2320063318d8ce1050e02</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <table>sys_script_client</table>
 <target_name>Client Script</target_name>
 <type>Related Lists</type>
@@ -296,14 +482,14 @@ current.addQuery('file_sys_id',parent.sys_id);
 <comments/>
 <name>sys_security_acl_role_ea6031080fda320063318d8ce1050ed5</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-18 10:35:20</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ea6031080fda320063318d8ce1050ed5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sysevent_script_action.ScriptAction_Admin</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="sysevent_script_action">a93f19410a0a0b4401f65d50ab97e76c</sys_security_acl><sys_update_name>sys_security_acl_role_ea6031080fda320063318d8ce1050ed5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-18 10:35:20</sys_updated_on><sys_user_role display_value="ScriptAction_Admin" name="ScriptAction_Admin">2dee61080fda320063318d8ce1050e6d</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>6b96ea000f5e320063318d8ce1050ec9</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>bb566d110fe2320063318d8ce1050e01</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <table>sysevent_script_action</table>
 <target_name>sysevent_script_action.ScriptAction_Admin</target_name>
 <type>Access Roles</type>
@@ -331,14 +517,14 @@ ScopedGlideEncrypter.prototype = {
 		return decrypted;
 	}
 };]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;hareeshhere&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-10 06:06:39&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;234c7f53dbd97200c2f3717bbf96198d&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;ScopedGlideEncrypter&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_234c7f53dbd97200c2f3717bbf96198d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;hareeshhere&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-13 16:21:43&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>6f96ea000f5e320063318d8ce1050ec8</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>bf566d110fe2320063318d8ce1050e00</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <table/>
 <target_name>ScopedGlideEncrypter</target_name>
 <type>Script Include</type>
@@ -362,14 +548,14 @@ if(midName == -1){
 	validUtil.validate(current);
 }
 ]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;hareeshhere&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-13 16:10:13&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;fc8221e8dba5f200c2f3717bbf9619a8&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;Code Review&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_fc8221e8dba5f200c2f3717bbf9619a8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-13 05:53:23&lt;/sys_updated_on&gt;&lt;table&gt;sys_metadata&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>a396ea000f5e320063318d8ce1050eca</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>f3566d110fe2320063318d8ce1050e02</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <table>sys_metadata</table>
 <target_name>Code Review</target_name>
 <type>UI Action</type>
@@ -384,14 +570,14 @@ if(midName == -1){
 <comments/>
 <name>sys_security_acl_role_7e607d080fda320063318d8ce1050e37</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-18 10:35:31</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>7e607d080fda320063318d8ce1050e37</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sysevent_script_action.*.ScriptAction_Admin</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="sysevent_script_action.*">bc8080380f82320063318d8ce1050edb</sys_security_acl><sys_update_name>sys_security_acl_role_7e607d080fda320063318d8ce1050e37</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-18 10:35:31</sys_updated_on><sys_user_role display_value="ScriptAction_Admin" name="ScriptAction_Admin">2dee61080fda320063318d8ce1050e6d</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>a796ea000f5e320063318d8ce1050ec9</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>f7566d110fe2320063318d8ce1050e01</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <table>sysevent_script_action.*</table>
 <target_name>sysevent_script_action.*.ScriptAction_Admin</target_name>
 <type>Access Roles</type>
@@ -515,14 +701,14 @@ if(midName == -1){
 	current.update();
 	
 })(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 15:18:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;1541b453db957200c2f3717bbf96197d&lt;/sys_id&gt;&lt;sys_mod_count&gt;40&lt;/sys_mod_count&gt;&lt;sys_name&gt;ProcessACRResults&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_1541b453db957200c2f3717bbf96197d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-13 15:31:48&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=1541b453db957200c2f3717bbf96197d"/&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>ab96ea000f5e320063318d8ce1050ec8</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>fb566d110fe2320063318d8ce1050e00</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <table>ecc_queue</table>
 <target_name>ProcessACRResults</target_name>
 <type>Business Rule</type>
@@ -541,14 +727,14 @@ if(midName == -1){
 	current.addQuery('update_set',parent.sys_id);
 	current.addQuery('isnew', true);
 })(current, parent);]]&gt;&lt;/query_with&gt;&lt;reference_field&gt;file_sys_id&lt;/reference_field&gt;&lt;related_list/&gt;&lt;simple_reference&gt;false&lt;/simple_reference&gt;&lt;sys_class_name&gt;sys_relationship&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-14 11:04:53&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;e3d055720f42320063318d8ce1050e3a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Review Validation Results&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_relationship_e3d055720f42320063318d8ce1050e3a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-14 11:04:53&lt;/sys_updated_on&gt;&lt;/sys_relationship&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=e3d055720f42320063318d8ce1050e3a"/&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>af96ea000f5e320063318d8ce1050ec7</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>ff562d110fe2320063318d8ce1050eff</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <table/>
 <target_name>Review Validation Results</target_name>
 <type>Relationship</type>
@@ -563,205 +749,19 @@ if(midName == -1){
 <comments/>
 <name>sys_ui_related_sys_update_set_null</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="sys_update_set" version="2" view=""><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Update Set - Default view" name="sys_update_set" related_list="NULL" sys_domain="global" view="Default view">dc0199720f42320063318d8ce1050ede</list_id><order_by/><position>0</position><related_list>sys_backout_problem.set_id</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-14 11:05:28</sys_created_on><sys_id>1c0199720f42320063318d8ce1050edf</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-14 11:05:28</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Update Set - Default view" name="sys_update_set" related_list="NULL" sys_domain="global" view="Default view">dc0199720f42320063318d8ce1050ede</list_id><order_by/><position>1</position><related_list>sys_update_xml.update_set</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-14 11:05:28</sys_created_on><sys_id>540199720f42320063318d8ce1050ee0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-14 11:05:28</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Update Set - Default view" name="sys_update_set" related_list="NULL" sys_domain="global" view="Default view">dc0199720f42320063318d8ce1050ede</list_id><order_by/><position>2</position><related_list>sys_update_set_log.update_set</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-14 11:05:28</sys_created_on><sys_id>580199720f42320063318d8ce1050ee0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-14 11:05:28</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Update Set - Default view" name="sys_update_set" related_list="NULL" sys_domain="global" view="Default view">dc0199720f42320063318d8ce1050ede</list_id><order_by/><position>3</position><related_list>sys_update_set.merged_to</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-14 11:05:28</sys_created_on><sys_id>5c0199720f42320063318d8ce1050ee0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-14 11:05:28</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Update Set - Default view" name="sys_update_set" related_list="NULL" sys_domain="global" view="Default view">dc0199720f42320063318d8ce1050ede</list_id><order_by/><position>4</position><related_list>REL:e3d055720f42320063318d8ce1050e3a</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-14 11:05:28</sys_created_on><sys_id>500199720f42320063318d8ce1050ee1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-14 11:05:28</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Update Set - Default view</calculated_name><filter/><name>sys_update_set</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-14 11:05:28</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>dc0199720f42320063318d8ce1050ede</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Update Set - Default view</sys_name><sys_package display_value="System Update Sets (with remote update set support)" source="com.glide.system_update_set">9725cec56110320092c0b8181e2a7a88</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_related_sys_update_set_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-14 11:05:28</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
+<remote_update_set display_value="ACRGlobal">7b562d110fe2320063318d8ce1050eff</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>af96ea000f5e320063318d8ce1050eca</sys_id>
+<sys_created_on>2017-05-04 17:19:20</sys_created_on>
+<sys_id>ff566d110fe2320063318d8ce1050e02</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
+<sys_updated_on>2017-05-04 17:19:20</sys_updated_on>
 <table>sys_update_set</table>
 <target_name>Update Set</target_name>
 <type>Related Lists</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view>Default view</view>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_script_include_cf98f8e2db4a7600da37f9361d9619ac</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.SyncRuleUtil&lt;/api_name&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;SyncRuleUtil&lt;/name&gt;&lt;script&gt;&lt;![CDATA[	var SyncRuleUtil = Class.create();
-SyncRuleUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
-	sync: function(){
-		var eslintCommand = '&lt;parameters&gt;&lt;parameter name="name" value="php acr/rulessync.php"/&gt;&lt;/parameters&gt;';
-		var queue = new GlideRecord('ecc_queue');
-		
-		queue.initialize();
-		queue.topic = 'Command';
-		queue.queue = 'output';
-		
-		queue.agent = this.getActiveMidAgentName();
-		if(queue.agent == '-1'){
-			gs.addErrorMessage('No Active MID server message');
-			return  'No Active MID server message';
-		}
-		queue.payload= eslintCommand;
-		
-		queue.insert();
-		return queue.agent;
-		
-	},
-	getActiveMidAgentName: function(){
-		var agent = new GlideRecord('ecc_agent');
-		var midserverName ='mid.server.';
-		var configuredMid4CodeReview = midserverName + gs.getProperty('x_snc_rcr.ESLintMid');
-		agent.addQuery('status','Up');
-		gs.info('*** configuredMid4CodeReview = ' + configuredMid4CodeReview);
-		agent.addQuery('name',gs.getProperty('x_snc_rcr.ESLintMid'));
-		//agent.addQuery('agent',configuredMid4CodeReview);
-		agent.query();
-		gs.info('*** configuredMid4CodeReview = '+ agent.getRowCount());
-		if(agent.next()){
-			midserverName += agent.name;
-		}else{
-			midserverName = '-1';
-		}
-		return midserverName;
-	},
-	
-	type: 'SyncRuleUtil'
-});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-13 14:40:38&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;cf98f8e2db4a7600da37f9361d9619ac&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;SyncRuleUtil&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_cf98f8e2db4a7600da37f9361d9619ac&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-17 09:17:52&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>e396ea000f5e320063318d8ce1050ec9</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
-<table/>
-<target_name>SyncRuleUtil</target_name>
-<type>Script Include</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_script_009653e4db15f24043abfd441d961928</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;cmdb_ci_acc&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;MyTestScript&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
-
-//	gs.log('My Test Script');
-	var gr = new GlideRecord('incident');
-	gr.query();
-	return gr.getRowCount();
-	
-//	var gr1='009653e4db15f24043abfd441d961928';
-
-})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-01 14:16:15&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;009653e4db15f24043abfd441d961928&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;MyTestScript&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_009653e4db15f24043abfd441d961928&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-07 08:28:47&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=009653e4db15f24043abfd441d961928"/&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>e796ea000f5e320063318d8ce1050ec8</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
-<table>cmdb_ci_acc</table>
-<target_name>MyTestScript</target_name>
-<type>Business Rule</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_relationship_577911aedb913200c2f3717bbf961969</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_relationship"&gt;&lt;sys_relationship action="INSERT_OR_UPDATE"&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;apply_to/&gt;&lt;basic_apply_to&gt;sys_update_set&lt;/basic_apply_to&gt;&lt;basic_query_from&gt;sys_update_xml&lt;/basic_query_from&gt;&lt;insert_callback/&gt;&lt;name&gt;Reviewable Objects&lt;/name&gt;&lt;query_from/&gt;&lt;query_with&gt;&lt;![CDATA[(function refineQuery(current, parent) {
-
-	// Add your code here, such as current.addQuery(field, value);
-current.addQuery('update_set',parent.sys_id);
-// 	current.addQuery('type','Business Rule');
-// 	current.addQuery('type','Client Script');
-// 		current.addQuery('type','Script Include');
-	
-var queryString = "type=Business Rule^ORtype=Client Script^ORtype=Script Include";
-//  var gr = new GlideRecord('incident');
-
- current.addEncodedQuery(queryString);
-	
-})(current, parent);]]&gt;&lt;/query_with&gt;&lt;reference_field&gt;application&lt;/reference_field&gt;&lt;related_list/&gt;&lt;simple_reference&gt;false&lt;/simple_reference&gt;&lt;sys_class_name&gt;sys_relationship&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-07 10:23:26&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;577911aedb913200c2f3717bbf961969&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Reviewable Objects&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_relationship_577911aedb913200c2f3717bbf961969&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-07 10:33:09&lt;/sys_updated_on&gt;&lt;/sys_relationship&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=577911aedb913200c2f3717bbf961969"/&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>eb96ea000f5e320063318d8ce1050ec7</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
-<table/>
-<target_name>Reviewable Objects</target_name>
-<type>Relationship</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_ui_related_sys_script_null</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="sys_script" version="2" view=""><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Business Rule - Default view" name="sys_script" related_list="NULL" sys_domain="global" view="Default view">1c7c19c31f101000dada97c0ed8b708c</list_id><order_by/><position>0</position><related_list>REL:67bdac52374010008687ddb1967334ee</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-09 16:56:07</sys_created_on><sys_id>390805dbdb957200c2f3717bbf96192c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-09 16:56:07</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Business Rule - Default view" name="sys_script" related_list="NULL" sys_domain="global" view="Default view">1c7c19c31f101000dada97c0ed8b708c</list_id><order_by/><position>1</position><related_list>REL:ee77cd9bdb957200c2f3717bbf9619ec</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-09 16:56:07</sys_created_on><sys_id>3d0805dbdb957200c2f3717bbf96192c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-09 16:56:07</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Business Rule - Default view</calculated_name><filter/><name>sys_script</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-09 16:56:07</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1c7c19c31f101000dada97c0ed8b708c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Business Rule - Default view</sys_name><sys_package display_value="Version Support" source="com.glideapp.version">78282f00db33220043abfd441d96197b</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_related_sys_script_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-09 16:56:07</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>eb96ea000f5e320063318d8ce1050eca</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
-<table>sys_script</table>
-<target_name>Business Rule</target_name>
-<type>Related Lists</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view>Default view</view>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_ui_action_a6559b4ddbe9b20043abfd441d9619a1</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;hint/&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;name&gt;Code Review&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[// gs.addInfoMessage('Code review results will be populated in a moment. Please refresh "Review Validation Results" section.');
-// action.setRedirectURL(current);
-// var validUtil = new x_snc_rcr.ValidateCodeReviewPayload();
-// validUtil.validate(current);
-
-action.setRedirectURL(current);
-var validUtil = new x_snc_rcr.ValidateCodeReviewPayload();
-var midName = validUtil.getActiveMidAgentName();
-if(midName == -1){
-	gs.addErrorMessage('No Active MID server message');
-}else{
-	gs.addInfoMessage('Code review results will be populated in a moment. Please refresh "Review Validation Results" section.');
-	validUtil.validate(current);
-}
-]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-15 13:42:57&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a6559b4ddbe9b20043abfd441d9619a1&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Code Review&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_a6559b4ddbe9b20043abfd441d9619a1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;hareeshhere&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-12 09:04:59&lt;/sys_updated_on&gt;&lt;table&gt;sys_update_set&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="ACRGlobal">a396ea000f5e320063318d8ce1050ec7</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-18 14:31:56</sys_created_on>
-<sys_id>ef96ea000f5e320063318d8ce1050ec9</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-18 14:31:56</sys_updated_on>
-<table>sys_update_set</table>
-<target_name>Code Review</target_name>
-<type>UI Action</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
 </sys_update_xml>
 </unload>
